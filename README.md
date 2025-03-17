@@ -1,6 +1,5 @@
 # 🌟 SocialConnect
 
-🚀 **SocialConnect** is a modern social media app built with **Swift** and **Firebase**.  
 **SocialConnect** is a next-gen iOS app designed with **MVVM**, Clean Architecture, and AI-powered recommendations. It features OAuth2 authentication, Keychain-secured token storage, and end-to-end encryption for privacy. With real-time push notifications (**APNs** & Firebase Cloud Messaging**), users receive personalized updates. The app leverages Core ML & Firebase MLKit for dynamic content recommendations, while async/await and Combine optimize performance. SocialConnect is built for scalability, security, and intelligent engagement, making it a great mobile experience.
 
 ---
