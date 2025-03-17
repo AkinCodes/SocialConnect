@@ -162,6 +162,20 @@ open SocialConnect.xcworkspace
 
 ---
 
+How to Obtain Your Own Firebase Service Account JSON
+Go to your Firebase Console → Project Settings → Service Accounts.
+Click Generate new private key and download the JSON file.
+Move the file to a secure location in your project directory (e.g., outside the repo).
+How to Use the JSON Securely
+Local Development: Store the path in an environment variable:
+bash
+Copy
+Edit
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/socialconnect-credentials.json"
+Production Deployment: Use secrets management tools like Google Secret Manager or GitHub Actions Secrets instead of hardcoding it.
+
+---
+
 ### ✅ 5️⃣ **Ensure `.gitignore` is Configured**
 Run:
 ```sh
