@@ -87,11 +87,6 @@ open SocialConnect.xcworkspace
 
 ---
 
-## 🛡 Security & GitHub Best Practices
-🚨 **DO NOT** commit API keys to GitHub.  
-🔒 Always use **`.gitignore`** to block sensitive files.  
-💡 Consider using **environment variables** instead of hardcoding secrets.
-
 ### ✅ 5️⃣ **Ensure `.gitignore` is Configured**
 Run:
 ```sh
