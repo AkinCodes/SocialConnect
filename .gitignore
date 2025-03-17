@@ -1,0 +1,13 @@
+// Ignore sensitive files
+SocialConnect/credentials.plist
+SocialConnect/GoogleService-Info.plist
+Config/Secrets.xcconfig
+
+// Ignore build and user-specific files
+*.xcuserdatad/
+*.xcworkspace/
+DerivedData/
+build/
+Pods/
+
+Config/

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>com.socialconnect.fetch</string>
+    </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.294216953490-rmeuftor5oknn76jka9tuj22vao3sik6</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>socialconnect</string>
+            </array>
+        </dict>
+    </array>
+    <key>FirebaseAppDelegateProxyEnabled</key>
+    <true/>
+    <key>FirebaseMessagingAutoInitEnabled</key>
+    <true/>
+    <key>GIDClientID</key>
+    <string>294216953490-rmeuftor5oknn76jka9tuj22vao3sik6.apps.googleusercontent.com</string>
+    <key>GIDServerClientID</key>
+    <string>294216953490-6o02j2ps16u0apdbmb4o65ilv6so6h2b.apps.googleusercontent.com</string>
+    <key>KeychainSharing</key>
+    <array>
+        <string>$(5J7L3N3X56)com.Akin.AkinSocialConnect</string>
+    </array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+    </array>
+    <key>aps-environment</key>
+    <string>development</string>
+</dict>
+</plist>
