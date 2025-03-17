@@ -15,6 +15,25 @@ It supports **authentication, real-time messaging, image uploads, and notificati
 
 ---
 
+https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.22.00.png?raw=true
+
+
+
+https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.22.06.png?raw=true
+
+
+https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.22.09.png?raw=true
+
+
+https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.25.58.png?raw=true
+
+
+https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.26.09.png?raw=true
+
+
+---
+
+
 ## 🔧 Installation & Setup
 
 ### 1️⃣ **Clone the Repository**
