@@ -162,6 +162,40 @@ open SocialConnect.xcworkspace
 
 ---
 
+How to Obtain Your Own Firebase Service Account JSON
+Go to your Firebase Console → Project Settings → Service Accounts.
+Click Generate new private key and download the JSON file.
+Move the file to a secure location in your project directory (e.g., outside the repo).
+How to Use the JSON Securely
+Local Development: Store the path in an environment variable:
+
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/socialconnect-credentials.json"
+Production Deployment: Use secrets management tools like Google Secret Manager or GitHub Actions Secrets instead of hardcoding it.
+
+---
+
+### 🛠 Running the Backend Server (Important Instruction for README)
+To ensure the app retrieves data correctly, users must start the backend server before running the project.
+
+🚀 How to Start the Backend Server
+Open Terminal and navigate to the backend folder:
+
+```cd path/to/backend ```
+(Replace path/to/backend with the actual path to your backend directory.)
+
+Run the server using Node.js:
+
+
+```node server.js```
+
+The backend should now be running, and the app will be able to fetch data successfully.
+
+**⚠ Important: Ensure you have Node.js installed before running this command. If you don’t have it, install it from nodejs.org.**
+
+**This instruction is critical for users to receive data on their device or simulator.**
+
+---
+
 ### ✅ 5️⃣ **Ensure `.gitignore` is Configured**
 Run:
 ```sh
