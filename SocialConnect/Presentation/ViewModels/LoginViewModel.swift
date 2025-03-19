@@ -31,7 +31,6 @@ final class LoginViewModel: ObservableObject {
 
         let cleanedEmail = email.trimmingCharacters(in: .whitespacesAndNewlines)
 
-        // 🔥 Ensure email is not empty before attempting login
         guard !cleanedEmail.isEmpty else {
             errorMessage = "Email cannot be empty."
             print("❌ Email is empty! Login aborted.")
@@ -59,7 +58,7 @@ final class LoginViewModel: ObservableObject {
         defer { isLoading = false }
 
         do {
-            let user = try await authManager.signUp(email: email, password: password) // ✅ Capture the user object
+            let user = try await authManager.signUp(email: email, password: password) 
             isLoggedIn = true
             print("✅ Registration successful: \(user.uid)")
 
@@ -73,7 +72,6 @@ final class LoginViewModel: ObservableObject {
         }
     }
 
-    /// Handles user sign-out
     func logout() {
         do {
             try authManager.signOut()

@@ -36,7 +36,6 @@ async function getAccessToken() {
         const auth = new GoogleAuth({ scopes: ["https://www.googleapis.com/auth/firebase.messaging"] });
         const client = await auth.getClient();
         const accessToken = await client.getAccessToken();
-//        console.log("🔥 OAuth Token:", accessToken.token);
         return accessToken.token;
     } catch (error) {
         console.error("❌ Error getting OAuth token:", error);
@@ -218,6 +217,6 @@ console.log("🔎 GOOGLE_APPLICATION_CREDENTIALS:", process.env.GOOGLE_APPLICATI
 
 // Start the server
 app.listen(PORT, () => console.log(`🚀 Server running on http://127.0.0.1:${PORT}`));
-getAccessToken().then(token => console.log("🔥 OAuth Token at Server Start:", token)).catch(err => console.error("❌ Error:", err));
+getAccessToken().then(token => console.log("OAuth Token at Server Start:", token)).catch(err => console.error("❌ Error:", err));
 
 

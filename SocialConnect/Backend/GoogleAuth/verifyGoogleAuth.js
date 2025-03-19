@@ -16,7 +16,7 @@ async function verify(token) {
     const payload = ticket.getPayload();
     
     console.log("✅ User Verified:", payload);
-    console.log("📌 Audience (aud):", payload.aud); // Log audience to check mismatch issues
+    console.log("Audience (aud):", payload.aud); // Log audience to check mismatch issues
 
     return payload;
   } catch (error) {

@@ -76,7 +76,7 @@ final class LoginViewController: UIViewController {
             return
         }
 
-        viewModel.email = email // Ensure email is set
+        viewModel.email = email
         viewModel.password = password
         
         print("🔍 Email entered: \(loginView.emailTextField.text ?? "nil")")

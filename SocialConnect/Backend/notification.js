@@ -11,7 +11,7 @@ if (!admin.apps.length) {
     });
 }
 
-// ✅ Send Push Notification to a User
+// Send Push Notification to a User
 async function sendNotification(userId, title, body) {
     try {
         const user = await User.findById(userId);

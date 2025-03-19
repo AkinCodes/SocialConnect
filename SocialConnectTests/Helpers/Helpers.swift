@@ -121,7 +121,7 @@ class MockPostRepository: PostRepository {
 
 
 
-class MockFetchPaginatedPostsUseCase: FetchPaginatedPostsUseCase {  // ✅ Now fully conforms to FetchPaginatedPostsUseCase
+class MockFetchPaginatedPostsUseCase: FetchPaginatedPostsUseCase {  
     var mockPosts: [Post] = []
     var shouldReturnError = false
 
@@ -130,12 +130,12 @@ class MockFetchPaginatedPostsUseCase: FetchPaginatedPostsUseCase {  // ✅ Now f
             throw NSError(domain: "PaginationError", code: 500, userInfo: [NSLocalizedDescriptionKey: "Failed to fetch paginated posts"])
         }
         
-        let paginatedPosts = Array(mockPosts.prefix(limit)) // ✅ Fetch correct data slice
+        let paginatedPosts = Array(mockPosts.prefix(limit))
         
         return SocialConnect.PaginatedResponse(
-            data: paginatedPosts,         // ✅ Provide required `data` parameter
-            nextCursor: cursor,           // ✅ Keep `nextCursor` as is
-            totalItems: mockPosts.count   // ✅ Provide `totalItems`
+            data: paginatedPosts,
+            nextCursor: cursor,
+            totalItems: mockPosts.count
         )
     }
 

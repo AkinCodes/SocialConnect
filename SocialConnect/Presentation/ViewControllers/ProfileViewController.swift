@@ -64,7 +64,6 @@ final class ProfileViewController: UIViewController {
         nameLabel.text = name
         bioLabel.text = bio
 
-        // 🔥 Load profile image with smooth fade-in
         if let imageUrl = imageUrl {
             loadProfileImage(from: imageUrl)
         } else {

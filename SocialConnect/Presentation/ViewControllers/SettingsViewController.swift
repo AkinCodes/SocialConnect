@@ -76,7 +76,7 @@ final class SettingsViewController: UIViewController {
     }
 }
 
-// ✅ Ensure logout option is handled
+// Ensure logout option is handled
 extension SettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let selectedOption = dataSource.itemIdentifier(for: indexPath) else { return }

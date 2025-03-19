@@ -25,7 +25,6 @@ final class ProfileViewModelTests: XCTestCase {
     func testFetchUserProfile_Success() async {
         let expectation = expectation(description: "User profile should be fetched successfully")
 
-        // ✅ Just set a simple mock user directly, avoiding FirebaseAuth.User
         mockUserRepository.mockUser = User(id: "123", name: "John Doe", email: "john@example.com", profileImageUrl: nil, bio: nil)
 
         let user = await sut.fetchUserProfile()

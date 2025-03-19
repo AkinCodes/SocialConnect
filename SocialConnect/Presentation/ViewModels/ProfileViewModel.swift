@@ -25,8 +25,6 @@ final class ProfileViewModel: ObservableObject {
 
     // MARK: - Fetch User Profile
     func fetchUserProfile() async -> User? {
-        print("🔥 fetchUserProfile() CALLED") // Debug log
-
         guard let currentUser = authManager.currentUser else {
             errorMessage = "No authenticated user found."
             print("❌ No authenticated user found.")
@@ -71,7 +69,7 @@ final class ProfileViewModel: ObservableObject {
                     name: currentUser.displayName ?? "New User",
                     email: currentUser.email ?? "user email",
                     profileImageUrl: currentUser.photoURL?.absoluteString,
-                    bio: "Software Developer" // 🔥 Default bio
+                    bio: "Software Developer"
                 )
 
                 try await userRef.setData(newUser.toDictionary())
