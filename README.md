@@ -69,22 +69,23 @@ Future-proofing backend queries with a flexible GraphQL API structure.
 
 ---
 
+
 ## 📸 Screenshots
 
-### 🖼 Screenshot 1
-<img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.22.00.png?raw=true" width="300">
 
-### 🖼 Screenshot 2
-<img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.22.06.png?raw=true" width="300">
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+  <img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.25.58.png?raw=true" width="300" style="margin-right: 10px;">
+  <img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.26.09.png?raw=true" width="300" style="margin-right: 10px;">
+  <img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-20%20at%2000.57.25.png?raw=true" width="300">
+</div>
 
-### 🖼 Screenshot 3
-<img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.22.09.png?raw=true" width="300">
 
-### 🖼 Screenshot 4
-<img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.25.58.png?raw=true" width="300">
 
-### 🖼 Screenshot 5
-<img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.26.09.png?raw=true" width="300">
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+  <img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.22.06.png?raw=true" width="300" style="margin-right: 10px;">
+  <img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.22.09.png?raw=true" width="300">
+ <img src="https://github.com/AkinCodes/SocialConnect/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20Max%20-%202025-03-17%20at%2014.22.00.png?raw=true" width="300" style="margin-right: 10px;">
+</div>
 
 
 ---
