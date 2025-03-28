@@ -1,4 +1,4 @@
-# 🌟 SocialConnect
+# SocialConnect
 
 **SocialConnect** is a next-gen iOS app designed with **MVVM**, Clean Architecture, and AI-powered recommendations. It features OAuth2 authentication, Keychain-secured token storage, and end-to-end encryption for privacy. With real-time push notifications (**APNs** & Firebase Cloud Messaging**), users receive personalized updates. The app leverages Core ML & Firebase MLKit for dynamic content recommendations, while async/await and Combine optimize performance. SocialConnect is built for scalability, security, and intelligent engagement, making it a great mobile experience.
 
@@ -175,10 +175,62 @@ Production Deployment: Use secrets management tools like Google Secret Manager o
 
 ---
 
+## 📲 Testing Push Notifications (For Reviewers & Recruiters)
+
+This project includes **real-time push notifications** using Firebase Cloud Messaging (FCM) with support for **deep linking** — so you can send a notification and navigate directly to a specific screen within the app.
+
+To test this feature manually, follow the instructions below.
+
+---
+
+### ✅ Send a Test Notification with `curl`
+
+You can use the Firebase HTTP v1 API to send a notification using a simple `curl` command:
+
+```bash
+curl -X POST "https://fcm.googleapis.com/v1/projects/<YOUR_PROJECT_ID>/messages:send" \
+  -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "message": {
+      "token": "<YOUR_DEVICE_FCM_TOKEN>",
+      "notification": {
+        "title": "🚀 Push Test from FCM V1",
+        "body": "This is a test notification sent via Firebase API V1!"
+      },
+      "data": {
+        "category": "PROFILE"
+      }
+    }
+  }'
+
+
+Replace the placeholders:
+Placeholder	Description
+<YOUR_PROJECT_ID>	Your Firebase project ID (e.g., socialconnect-d72ef)
+<YOUR_ACCESS_TOKEN>	A valid OAuth 2.0 token generated using a Firebase Service Account
+<YOUR_DEVICE_FCM_TOKEN>	The device token shown in Xcode console when the app runs
+⚠️ Note: This project does not expose any real tokens for security reasons. You’ll need to set these up in your own Firebase Console.
+
+
+Deep Link Categories
+The app supports smart navigation via the category key in the data payload. Try changing it to:
+
+"category": "PROFILE" → Opens the profile screen
+
+"category": "SETTINGS" → Opens the settings screen
+
+"category": "POST_DETAILS" → Opens a sample post view (if implemented)
+
+This is handled by the DeepLinkHandler in the app via FCM data messages.
+
+
+---
+
 ### 🛠 Running the Backend Server (Important Instruction for README)
 To ensure the app retrieves data correctly, users must start the backend server before running the project.
 
-🚀 How to Start the Backend Server
+How to Start the Backend Server
 Open Terminal and navigate to the backend folder:
 
 ```cd path/to/backend ```
@@ -197,7 +249,7 @@ The backend should now be running, and the app will be able to fetch data succes
 
 ---
 
-### ✅ 5️⃣ **Ensure `.gitignore` is Configured**
+### **Ensure `.gitignore` is Configured**
 Run:
 ```sh
 git check-ignore -v SocialConnect/GoogleService-Info.plist credentials.plist
@@ -223,11 +275,11 @@ Start the project in **Xcode**:
 ```sh
 Cmd + R
 ```
-✅ **If everything is set up correctly, the app should launch without API errors.**  
+**If everything is set up correctly, the app should launch without API errors.**  
 
 ---
 
-## 🤝 Contribution Guidelines
+## Contribution Guidelines
 We welcome contributions! Follow these steps:
 
 1. **Fork the repo**  
@@ -246,7 +298,8 @@ We welcome contributions! Follow these steps:
 
 ---
 
-## 📝 License
-This project is **MIT Licensed**.
-
----
+**Akin Olusanya**  
+🎓 iOS Engineer | ML Enthusiast | Full-Stack Creator  
+📧 workwithakin@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/akindeveloper)  
+📁 [GitHub](https://github.com/AkinCodes)
